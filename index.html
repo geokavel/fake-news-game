@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Fake News Game</title>
+<meta property="og:image" content="http://geokavel.byethost7.com/news_game/images/trump_face.jpg" />
+<meta property="og:description" content="Fake News Game - How well do you know your fake news?" />
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="setup.js"></script>
+<script src="api.js"></script>
+<script src="utils.js"></script>
+<script src="anim.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="init()" style="background:url('images/flag.jpg'),url('images/russia.jpg') no-repeat fixed;background-size:100% 100%">
+<div style="margin:5% 25%">
+  <div id="audio"></div>
+  <div style="text-align:center" id="intro">
+    <h1>
+Fake News Game
+</h1>
+    <img id="trump" />
+    <h2>
+How well do you know your "fake news"?
+</h2>
+    <button id="start" style="text-align:center;font-size:36px;background-color:transparent" disabled>Loading...</button>
+  </div>
+  <div id="game" style="padding:10% 0%" hidden>
+    <h2 style="text-align:center" id="headline"></h2>
+    <div style="text-align:center">
+      <button id="FOX">
+      </button>
+      <button id="CNN" ></button>
+      <button id="MSNBC" >
+      </button>
+      <button id="RT"></button>
+    </div>
+    <h3 id="score">
+</h3>
+    <h3 id="answer">
+</h3>
+  </div>
+  <div id="review" style="text-align:center" hidden>
+  <div id="end">
+    <h2 id="finalScore" style="green">
+    </h2>
+    <h3 id="winText">
+    </h3>
+    <h4>
+    Click on thumbnails to watch videos!
+    </h4>
+    </div>
+    <div id="playerBox" hidden>
+      <h3 id="revHL" style="font-style:italic">
+    </h3>
+      <iframe id="player" width="100%" height="315px" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="thumbnails" style="padding:5px;text-align:left">
+    </div>
+    <div style="text-align:left">
+         <button onclick="location.reload()" style="text-align:center;font-size:18px;background-color:transparent;color:green">Play Again?</button>
+    </div>
+  </div>
+  </div>
+  <h3 id="subtitle" hidden>I never order any dirty work.</h3>
+</body>	
